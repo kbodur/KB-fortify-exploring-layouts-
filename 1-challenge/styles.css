@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 14px;
+}
+
+body {
+  background: linear-gradient(0.25turn, #282729, rgb(44, 24, 49), #2e2d2e);
+}
+
+i {
+  position: relative;
+  float: right;
+  top: 9px;
+  left: -8.2px;
+}
+
+.box {
+  border: 1px solid transparent;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 0.7fr);
+  gap: 20px;
+  padding: 40px;
+}
+.box__grid {
+  border: 1px solid transparent;
+  display: grid;
+  grid-template-columns: 20%, 80%;
+  grid-template-rows: 1fr 3fr;
+  gap: 5px;
+  padding: 20px;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(127, 150, 255, 0.1);
+}
+.box__grid p {
+  color: rgba(255, 254, 254, 0.3);
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.box__grid b {
+  color: #fffefe;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.box__grid-one {
+  color: rgb(15, 147, 103);
+  background-color: rgba(15, 147, 103, 0.3);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.box__grid-two {
+  color: rgb(133, 127, 255);
+  background-color: rgba(133, 127, 255, 0.3);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.box__grid-three {
+  color: rgb(28, 90, 171);
+  background-color: rgba(28, 90, 171, 0.3);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.box__grid-four {
+  color: rgb(244, 255, 127);
+  background-color: rgba(244, 255, 127, 0.3);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.box__grid-five {
+  color: rgb(240, 127, 255);
+  background-color: rgba(240, 127, 255, 0.3);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.box__grid-six {
+  color: rgb(138, 127, 255);
+  background-color: rgba(138, 127, 255, 0.3);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.box__grid-seven {
+  color: rgb(127, 197, 255);
+  background-color: rgba(127, 197, 255, 0.3);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.box__grid-eight {
+  color: rgb(255, 189, 127);
+  background-color: rgba(255, 189, 127, 0.3);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+#one {
+  background-color: rgba(15, 147, 103, 0.1);
+}
+
+#two {
+  background-color: rgba(133, 127, 255, 0.1);
+}
+
+#three {
+  background-color: rgba(28, 90, 171, 0.1);
+}
+
+#four {
+  background-color: rgba(244, 255, 127, 0.1);
+}
+
+#five {
+  background-color: rgba(240, 127, 255, 0.1);
+}
+
+#six {
+  background-color: rgba(138, 127, 255, 0.1);
+}
+
+#seven {
+  background-color: rgba(127, 197, 255, 0.1);
+}
+
+#eight {
+  background-color: rgba(255, 189, 127, 0.3);
+}/*# sourceMappingURL=styles.css.map */

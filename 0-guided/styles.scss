@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+html, body{
+    font-size: 40px;
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 3.5fr 1.2fr;
+    grid-template-rows: 1.2fr 3.5fr 1fr;
+    width: 100%;
+    height: 100%;
+
+}
+
+header{
+    background-color: #011627;
+   grid-column: 1/4;
+   grid-row: 1/2;
+
+}
+footer{
+background-color: #FF3366;
+grid-column: 1/4;
+grid-row: 3/4;
+}
+nav{
+background-color: #2EC4B6;
+grid-column: 1/2;
+grid-row: 2/4;
+}
+main{
+background-color:#F6F7F8;
+grid-column: 2/3;
+grid-row: 2/4;
+}
+aside{
+background-color: #20A4F3;
+grid-column: 3/4;
+grid-row: 2/4;
+}
+
+
+/* Extra Small Devices (Phones, <576px) - Example: iPhone SE */
+@media (max-width: 575.98px) {
+ aside, nav, header,footer{
+    background-color: chartreuse;
+ }
+    /* CSS rules for extra small devices like smaller smartphones */
+  }
+  
+  /* Small Devices (Small phones, ≥576px) - Example: Samsung Galaxy S10e */
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    .container{
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows:repeat(3, 2fr);
+    }
+    nav{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+   
+}
+  /* Medium Devices (Tablets, ≥768px) - Example: iPad */
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows:repeat(5, 1fr);
+    }
+    nav,header,main,aside,footer{
+        grid-column: 1/2;
+    }
+    nav{
+        grid-row: 2/3;
+    }
+    main{
+        grid-row: 3/4;
+    }
+    aside{
+        grid-row: 4/5;
+    }
+    footer{
+        grid-row: 5/6;
+    }
+    /* CSS rules for medium devices like tablets */
+
+  }
+  
+  /* Large Devices (Desktops, ≥992px) - Example: iPad Pro */
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    main{
+        background-color: chocolate;
+        border:5px solid #FF3366;
+        border-radius: 50%;
+        height: 550px;
+
+    }
+    header{
+        background-color: #FF3366;
+    }
+   
+    /* CSS rules for large devices (small desktops, large tablets) */
+  }
+  
+  /* Extra Large Devices (Large desktops, ≥1200px) - Example: MacBook Pro 15" */
+  @media (min-width: 1200px) {
+
+    nav,aside,footer,header{
+        background-color: cadetblue;
+        border-radius: 50%;
+    }
+    main{
+        width: 400px;
+        height: 400px;
+        margin: 100px 100px;
+        background-color: #FF3366;
+    }
+    /* CSS rules for extra large devices (large desktops) */
+  }
