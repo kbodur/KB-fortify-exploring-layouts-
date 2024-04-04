@@ -39,3 +39,4 @@ You have two options for submitting your work:
 - **What to Submit**: A link to your repository showcasing all completed work, focusing on the redesign of the website without active state functionality.
 
 **Note**: Please ensure your repository is public or shared with us to verify the quality and completion of your work.
+[Demo](https://kbodur.github.io/KB-fortify-exploring-layouts-/)
